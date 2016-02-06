@@ -1,8 +1,17 @@
 <ion-view view-title="Restaurantes">
-  <ion-content class="padding">
+  <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="res in rest.restaurants" type="item-text-wrap" href="">
-        {{res.name}}
+      <ion-item class="noPadding" ng-repeat="res in rest.restaurants" type="item-text-wrap" href="">
+        <div class="row">
+          <div class="col col-20">
+            <img ng-src="{{res.img}}" alt="" width="100%" class="imgCircle">
+          </div>
+
+          <div class="col col-80">
+            <h2 ng-bind="::res.name"></h2>
+          </div>
+        </div>
+
       </ion-item>
     </ion-list>
   </ion-content>

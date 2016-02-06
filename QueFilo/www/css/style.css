@@ -11,3 +11,10 @@
   color: rgb(255,109,0) !important;
 }
 
+.imgCircle{
+  border-radius: 50%;
+}
+
+.noPadding>a{
+  padding: 10px 10px 10px 10px !important;
+}
