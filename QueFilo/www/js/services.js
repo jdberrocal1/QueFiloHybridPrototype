@@ -6,7 +6,7 @@
       var restaurants=[
         {
           id:9,
-          name:"Charlies Burgues",
+          name:"Charlie's Burguer",
           tel:"2460-2454",
           addres:"Costado norte del parque ciudad Quesada San Carlos",
           description:"Preparamos las hamburguesas mas exquisitas del país, comidas rápidas y platos típicos. Todos nuestros platillos son preparados con materia prima de primera calidad.",

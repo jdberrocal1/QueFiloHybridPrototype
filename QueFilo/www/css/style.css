@@ -3,6 +3,11 @@
   background-color: rgb(255,109,0) !important;
   color: white !important;
 }
+
+.tab-item-active, .tab-item.activated{
+  border-color: rgb(255,109,0) !important;
+}
+
 .title{
   color: white !important;
 }
