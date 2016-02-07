@@ -1,12 +1,11 @@
 <ion-view view-title="Restaurantes">
   <ion-content>
     <ion-list>
-      <ion-item class="noPadding" ng-repeat="res in rest.restaurants" type="item-text-wrap" href="">
+      <ion-item class="Padding" ng-repeat="res in rest.restaurants" type="item-text-wrap" ng-click="rest.goToRestaurant(res.id)">
         <div class="row">
           <div class="col col-20">
             <img ng-src="{{res.img}}" alt="" width="100%" class="imgCircle">
           </div>
-
           <div class="col col-80">
             <h2><b ng-bind="::res.name"></b></h2>
             <h3 ng-bind="::res.type"></h3>

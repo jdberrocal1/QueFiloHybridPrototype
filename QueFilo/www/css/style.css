@@ -20,6 +20,10 @@
   border-radius: 50%;
 }
 
-.noPadding>a{
+.Padding>a{
   padding: 10px 10px 10px 10px !important;
+}
+
+.noMarginBotton{
+  margin-bottom: 0 !important;
 }

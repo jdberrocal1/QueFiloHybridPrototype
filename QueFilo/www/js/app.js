@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-    var app = angular.module('starter', [
+    var app = angular.module('QueFilo', [
       'ionic',
       'ngCordova'
     ]);
@@ -27,46 +27,56 @@
         .state('tab', {
         url: '/tab',
         abstract: true,
-        templateUrl: 'templates/tabs.html'
+        templateUrl: 'js/tabs/tabs.html'
       })
 
       // Each tab has its own nav history stack:
 
-      .state('tab.rest', {
-        url: '/rest',
+      .state('tab.rests', {
+        url: '/rests',
         views: {
-          'tab-rest': {
-            templateUrl: 'templates/tab-rest.html',
+          'tab-rests': {
+            templateUrl: 'js/restaurants/restList.html',
+            controller: 'restListController',
+            controllerAs:'rest'
+          }
+        }
+      })
+      .state('tab.rest', {
+        url: '/rests/rest/:id',
+        views: {
+          'tab-rests': {
+            templateUrl: 'js/restaurants/rest.html',
             controller: 'restController',
             controllerAs:'rest'
           }
         }
       })
-
       .state('tab.orders', {
-          url: '/orders',
-          views: {
-            'tab-orders': {
-              templateUrl: 'templates/tab-orders.html',
-              controller: 'ordersController',
-              controllerAs:'orders'
-            }
+        url: '/orders',
+        views: {
+          'tab-orders': {
+            templateUrl: 'js/orders/orderList.html',
+            controller: 'orderListController',
+            controllerAs:'order'
           }
-        })
-
+        }
+      })
       .state('tab.profile', {
         url: '/profile',
         views: {
           'tab-profile': {
-            templateUrl: 'templates/tab-profile.html',
+            templateUrl: 'js/profile/profile.html',
             controller: 'profileController',
             controllerAs:'profile'
           }
         }
-      });
+      })
+
+
 
       // if none of the above states are matched, use this as the fallback
-      $urlRouterProvider.otherwise('/tab/rest');
+      $urlRouterProvider.otherwise('/tab/rests');
 
     });
 })();
