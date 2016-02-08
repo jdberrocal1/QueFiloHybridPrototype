@@ -19,7 +19,16 @@
 
       function getRestaurantById(id){
         vm.rest=RestService.getRestaurantById(id);
+        vm.rest.isInfoShow=true;
+        if(vm.rest.isOpen){
+          vm.rest.isOpenMsg="Abierto en este momento";
+        }else{
+          vm.rest.isOpenMsg="Cerrado en este momento"
+        }
       }
+
+
+
 
       getRestaurantById(restId);
     }

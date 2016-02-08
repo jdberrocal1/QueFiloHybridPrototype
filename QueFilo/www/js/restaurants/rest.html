@@ -14,33 +14,58 @@
           <div class="col col-33"><b ng-bind="rest.rest.type"></b></div>
         </div>
         <div class="row">
-          <div class="col col-33">
-            <b>Telefono</b>
-          </div>
-          <div class="col col-67">
-            <p ng-bind="::rest.rest.tel" class="noMarginBotton"></p>
+          <div class="col">
+            <b ng-bind="rest.rest.isOpenMsg" ng-class="{'openMsg':rest.rest.isOpen,'closeMsg':!rest.rest.isOpen}"></b>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col col-25"><b>Horario</b></div>
-      <div class="col col-75">
-        <p ng-bind="::rest.rest.schedule" class="noMarginBotton"></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-25"><b>Dirección</b></div>
-      <div class="col col-75">
-        <p ng-bind="::rest.rest.address" class="noMarginBotton"></p>
-      </div>
-    </div>
-    <div class="row">
+
+    <div class="row"
+         ng-click="rest.rest.isInfoShow=!rest.rest.isInfoShow"
+         ng-class="{active: rest.rest.isInfoShow}">
       <div class="col">
-        <b ng-bind="::rest.rest.description"></b>
+        <i class="icon infoIcon" ng-class="rest.rest.isInfoShow ? 'ion-minus' : 'ion-plus'"></i>
+        &nbsp;
+        Info
       </div>
 
     </div>
+    <div class="item-accordion"
+         ng-show="rest.rest.isInfoShow">
+      <div class="row">
+        <div class="col col-33">
+          <b>Telefono</b>
+        </div>
+        <div class="col col-67">
+          <p ng-bind="::rest.rest.tel" class="noMarginBotton"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-25"><b>Horario</b></div>
+        <div class="col col-75">
+          <p ng-bind="::rest.rest.schedule" class="noMarginBotton"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-25"><b>Dirección</b></div>
+        <div class="col col-75">
+          <p ng-bind="::rest.rest.address" class="noMarginBotton"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <b ng-bind="::rest.rest.description"></b>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
   </ion-content>
 </ion-view>
 

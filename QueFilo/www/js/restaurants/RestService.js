@@ -12,7 +12,8 @@
           description:"Preparamos las hamburguesas mas exquisitas del país, comidas rápidas y platos típicos. Todos nuestros platillos son preparados con materia prima de primera calidad.",
           schedule:"Lunes-Viernes: 10:00 AM-10:00 PM Sábado-Domingo: 9:00 AM-10:00 PM ",
           type:"Varios",
-          img:"img/9.jpg"
+          img:"img/9.jpg",
+          isOpen:true
         },
         {
           id:16,
@@ -22,7 +23,8 @@
           description:"",
           schedule:" Lunes-Domingo: 10:30 AM-10:00 PM",
           type:"Varios",
-          img:"img/16.jpg"
+          img:"img/16.jpg",
+          isOpen:true
         },
         {
           id:12,
@@ -32,7 +34,8 @@
           description:"",
           schedule:"Lunes-Viernes: 8:00 AM-10:00 PM Sábado: 12:00 AM-10:00 PM Domingo: 2:00 PM-09:00 PM ",
           type:"Varios",
-          img:"img/12.png"
+          img:"img/12.png",
+          isOpen:false
         },
         {
           id:2,
@@ -42,7 +45,8 @@
           description:"Especializados en comida Japonesa",
           schedule:"Lunes-Domingo: 11:30 AM-10:00 PM",
           type:"Oriental",
-          img:"img/2.jpg"
+          img:"img/2.jpg",
+          isOpen:true
         },
         {
           id:14,
@@ -52,7 +56,8 @@
           description:"Restauran italiano y pizza a la leña",
           schedule:"Martes-Viernes: 6:00 PM-9:00 PM Sábado: 12:00 PM-9:00 PM Domingo: 12:00 PM-8:00 PM ",
           type:"Italiana",
-          img:"img/14.jpg"
+          img:"img/14.jpg",
+          isOpen:false
         },
         {
           id:7,
@@ -62,7 +67,8 @@
           description:"Un negocio familiar ubicado en barrio San Antonio, Ciudad Quesada especializado en pizzas, pastas y cocina italiana al estilo New York.",
           schedule:"Lunes-Jueves: 11:00 AM-10:00 PM Viernes-Sábado: 11:00 AM-11:00 PM Domingo: 11:00 AM-10:00 PM ",
           type:"Italiana",
-          img:"img/7.jpg"
+          img:"img/7.jpg",
+          isOpen:true
         }
       ];
 

@@ -27,3 +27,15 @@
 .noMarginBotton{
   margin-bottom: 0 !important;
 }
+
+.openMsg{
+  color: #31B404;
+}
+
+.closeMsg{
+  color: red;
+}
+
+.infoIcon{
+  color: rgb(255,109,0);
+}
