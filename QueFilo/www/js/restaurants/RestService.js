@@ -42,11 +42,49 @@
                   name:"Quesoburguesa Delux",
                   price:2100,
                   description:"Torta regular, tocineta, queso, tomate, lechuga, cebolla y salsas."
+                },
+                {
+                  name:"Retoburguesa",
+                  price:4125,
+                  description:"Torta de 1/4 de libra con queso amarillo, aguacate, aros de cebolla, salsa chipotle, tocineta, lechuga, tomate, salsa BBQ y pepinillos, todo entre pan de hamburguesa. Te retamos a pedirla."
                 }
               ]
             },
-            {name:"Sandwich"},
-            {name:"Combos Charlie's"},
+            {
+              name:"Sandwich",
+              products:[
+                {
+                  name:"Jamon y Queso",
+                  price:2650,
+                  description:""
+                },
+                {
+                  name:"Carne",
+                  price:2700,
+                  description:""
+                },
+                {
+                  name:"Súper Especial",
+                  price:3975,
+                  description:"Jamón, queso, carne, pollo y frijoles."
+                }
+              ]
+            },
+            {
+              name:"Combos Charlie's",
+              products:[
+                {
+                  name:"Retocombo",
+                  price:5275,
+                  description:"Retoburguesa, papas fritas y refresco mediano."
+                },
+                {
+                  name:"Combo 2 Quesoburguesas",
+                  price:4300,
+                  description:"Dos hamburguesas con queso, papas fritas y refresco mediano."
+                }
+              ]
+            },
             {name:"Especiales"},
             {name:"Combos Especiales"},
             {name:"Papitas y mas"},
