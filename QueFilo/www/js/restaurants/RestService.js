@@ -13,7 +13,53 @@
           schedule:"Lunes-Viernes: 10:00 AM-10:00 PM Sábado-Domingo: 9:00 AM-10:00 PM ",
           type:"Varios",
           img:"img/9.jpg",
-          isOpen:true
+          isOpen:true,
+          menu:[
+            {
+              name:"Hamburguesas",
+              products:[
+                {
+                  name:"Hamburguesa Regular",
+                  price:1325,
+                  description:"Torta regular, lechuga y salsas"
+                },
+                {
+                  name:"Quesoburguesa con Jamón",
+                  price:1750,
+                  description:"Torta regular, queso, jamón y salsas"
+                },
+                {
+                  name:"Quesoburguesa Doble",
+                  price:2100,
+                  description:"2 Tortas regulares, queso y salsas"
+                },
+                {
+                  name:"Quesoburguesa",
+                  price:1425,
+                  description:"Torta regular, queso y salsas"
+                },
+                {
+                  name:"Quesoburguesa Delux",
+                  price:2100,
+                  description:"Torta regular, tocineta, queso, tomate, lechuga, cebolla y salsas."
+                }
+              ]
+            },
+            {name:"Sandwich"},
+            {name:"Combos Charlie's"},
+            {name:"Especiales"},
+            {name:"Combos Especiales"},
+            {name:"Papitas y mas"},
+            {name:"Pizza"},
+            {name:"Tipico"},
+            {name:"Desayunos"},
+            {name:"Menu Liviano"},
+            {name:"Postres"},
+            {name:"Batidos"},
+            {name:"Bebidas Naturales"},
+            {name:"Gaseosas"},
+            {name:"Bebidas Calientes"}
+          ]
         },
         {
           id:16,
